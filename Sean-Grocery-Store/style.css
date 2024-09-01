@@ -1,0 +1,212 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: darkblue;
+  display: block;
+  background-color: #FFBF00;
+  overflow: hidden;
+  margin: 0px;
+}
+
+h1 {
+  background-color: #FD7F20;
+  padding: 20px;
+  margin: 0px;
+}
+
+#productstyle {
+  overflow: hidden;
+}
+
+#cataloguestyle {
+  overflow: hidden;
+}
+
+#shopstyle {
+  overflow: scroll;
+}
+
+.columnL {
+  float: left;
+  width: 50%;;
+}
+
+.columnR {
+  float: left;
+  width: 50%;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}  
+
+.columnL:after, .columnR:after, .rowIndex:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.dropdown-category, .dropdown-product {
+  display: none;
+  position: absolute;
+  background-color: green ;
+  width: 100%;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 20px 26px;
+  margin: 0px;
+  position: relative;
+  font-family: inherit;
+}
+
+.dropBtnCat {
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 20px 20px;
+  position: relative;
+  float: left;
+  font-family: inherit;
+}
+
+.dropBtnPro {
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 20px 20px;
+  background-color: green;
+  position: relative;
+  float: left;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+.dropdown, .dropBtnCat {
+  float: left;
+}
+
+.navbar .dropbtn:hover {
+  background-color: purple;
+}
+
+.navbar .dropBtnCat:hover, .dropBtnPro:hover {
+  background-color: purple;
+}
+
+.navbar .dropBtnPro:hover {
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-category, #set1:hover .dropdown-product, #set2:hover .dropdown-product {
+  display: block;
+}
+
+.productdetails {
+  margin: 30px;
+}
+
+.productdetails th {
+  padding: 10px;
+  font-size: 24px;
+}
+
+.productdetails td {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.productdetails img {
+  margin-left: 20px;
+  width: 250px;
+  height: 150px;
+}
+
+/* shoppingCart.php */
+
+.cartHeading, .cartStyle {
+  font-size: 16px;
+}
+
+.cartHeading th{
+  width: 131px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: silver;
+}
+
+.cartStyle td{
+  width: 125px;
+  padding: 4px;
+  margin: 0px;
+}
+
+.buttons {
+  background-color: green; 
+  border: none;
+  color: white;
+  padding: 15px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.submit {
+  background-color: #893cbd; 
+  border: none;
+  color: white;
+  padding: 15px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttons:hover {
+  background-color: purple
+}
+
+.checkoutTable th{
+  width: 131px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: silver;
+}
+
+.checkoutTable td{
+  width: 125px;
+  padding: 4px;
+  margin: 0px;
+}
+
+.checkout {
+  padding-left: 25px;
+}
+
+.formTable {
+  width: 100px;
+}
+
+.formTable td{
+  padding: 5px;
+}
+
+.required {
+  color: red;
+}
